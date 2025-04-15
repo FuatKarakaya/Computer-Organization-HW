@@ -238,7 +238,7 @@ always @(*) begin
          end 
          default:;                                                 
     endcase
-    ALUOut <= tempResult;
+    ALUOut = tempResult;
 end
 
 always @(posedge Clock) begin
